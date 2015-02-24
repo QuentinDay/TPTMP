@@ -40,8 +40,8 @@ local jacobsmod = tpt.version.jacob1s_mod~=nil
 math.randomseed(os.time())
 local username = get_name()
 if username == "" then
-        username = "THE_BEST_GUEST_EVER"
-end
+        username = "Guest"..math.random(10000,99999)
+        end
 local chatwindow
 local con = {connected = false,
                  socket = nil,
